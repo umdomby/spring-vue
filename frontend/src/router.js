@@ -6,6 +6,7 @@ import Bootstrap from '@/components/Bootstrap'
 import User from '@/components/User'
 import Login from '@/components/Login'
 import Protected from '@/components/Protected'
+import Message from '@/components/Message'
 
 import store from './store'
 
@@ -19,6 +20,7 @@ const router = new Router({
         { path: '/bootstrap', component: Bootstrap },
         { path: '/user', component: User },
         { path: '/login', component: Login },
+        { path: '/m', component: Message },
         {
             path: '/protected',
             component: Protected,

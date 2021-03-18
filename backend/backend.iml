@@ -14,7 +14,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="entityManagerFactory" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -95,6 +97,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.3.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.18" level="project" />
     <orderEntry type="library" name="Maven: com.h2database:h2:1.4.200" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jdbc:9.0.44" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:9.0.44" level="project" />

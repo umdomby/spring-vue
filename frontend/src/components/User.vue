@@ -41,7 +41,6 @@
     methods: {
       // Fetches posts when the component is created.
       createNewUser () {
-
         api.createUser(this.user.firstName, this.user.lastName).then(response => {
             // JSON responses are automatically parsed.
             this.response = response.data;
