@@ -6,9 +6,6 @@
     <h3>{{ response }}</h3>
   </div>
 
-
-
-
 </template>
 
 <script>
@@ -22,8 +19,6 @@
         return {
           response: [],
           errors: [],
-          text: '',
-          id: ''
         }
       },
       methods: {

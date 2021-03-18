@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="v2">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Views.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/repository/MessageRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Message.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/messages/MessageForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/messages/MessageList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/messages/MessageRow.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="messages axios get">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/configuration/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/configuration/WebSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/de/jonashackt/springbootvuejs/configuration/WebSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/de/jonashackt/springbootvuejs/configuration/WebSecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/backend-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/backend-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Message.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="vue-rest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,7 +79,7 @@
       <updated>1616076775227</updated>
       <workItem from="1616076779238" duration="1309000" />
       <workItem from="1616080551433" duration="4837000" />
-      <workItem from="1616090797295" duration="5043000" />
+      <workItem from="1616090797295" duration="6650000" />
     </task>
     <task id="LOCAL-00001" summary="v2">
       <created>1616080679546</created>
@@ -109,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616080679546</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="messages axios get">
+      <created>1616096048281</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616096048281</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2" />
+    <MESSAGE value="messages axios get" />
+    <option name="LAST_COMMIT_MESSAGE" value="messages axios get" />
   </component>
 </project>
