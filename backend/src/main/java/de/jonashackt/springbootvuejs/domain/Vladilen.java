@@ -13,7 +13,7 @@ public class Vladilen {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JsonView(Views.Id.class)
     private Long id;
-//
+
     @JsonView(Views.IdName.class)
     private String name;
     @JsonView(Views.IdName.class)

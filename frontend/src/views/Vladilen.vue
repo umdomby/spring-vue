@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <app-alert :alert="alert" @close="alert = null"></app-alert>
+
     <form class="card" @submit.prevent="createPerson">
       <h2>Работа с базой данных</h2>
         <div class="form-control">
@@ -13,14 +15,16 @@
   </div>
 
   <vladilen-list
-                 :people="people"
-                 @load="loadPeople"
+       :people="people"
+       @load="loadPeople"
+       @remove="removePerson"
   ></vladilen-list>
 </template>
 
 <script>
 
 import VladilenList from "@/views/VladilenList";
+import AppAlert from "@/views/AppAlert";
 import axios from "axios";
 
 export default {
@@ -29,8 +33,12 @@ export default {
     return {
       name: '',
       lastname: '',
-      people: []
+      people: [],
+      alert: null,
     }
+  },
+  mounted() {
+    this.loadPeople()
   },
   methods: {
     async createPerson() {
@@ -45,26 +53,56 @@ export default {
         })
       })
       const firebaseData = await response.json()
-      console.log(firebaseData)
+      // console.log(firebaseData)
+      this.people.push({
+        name: this.name,
+        lastname: this.lastname,
+        id: firebaseData.name
+      })
+
       this.name = ''
       this.lastname = ''
     },
     async loadPeople() {
-      const {data} = await axios.get('/api/vladilen')
-      this.people = Object.keys(data).map(key => {
-        return {
-          id: key,
-          ...data[key],
-          // name: data[key].name,
-          // lastname: data[key].lastname
+      try {
+        const {data} = await axios.get('/api/vladilen')
+        // if (!data) {
+        //   throw new Error('Список людей пуст')
+        // }
+        this.people = Object.keys(data).map(key => {
+          return {
+            id: key,
+            ...data[key],
+            // name: data[key].name,
+            // lastname: data[key].lastname
+          }
+        })
+      }catch(e){
+        this.alert = {
+          type: 'danger',
+          title: 'Ошибка!',
+          text: 'e'
         }
-      })
+      }
       console.log(this.people)
+    },
+    async removePerson(id) {
+      try {
+        const name = this.people.find(person => person.id === id).name
+        await axios.delete(`/api/vladilen/${id}`)
+        this.people = this.people.filter(person => person.id !== id)
+        this.alert = {
+          type: 'primary',
+          title: 'Успешно!',
+          text: `Пользователь с именем "${name}" был удален`
+        }
+      } catch (e) {
+        console.log(e.message)
+      }
     }
   },
-  components: {
-    VladilenList
-  }
+
+  components: {VladilenList, AppAlert}
 }
 </script>
 

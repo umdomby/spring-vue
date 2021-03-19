@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="messages axios v2-v3">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/controller/VladilenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Vladilen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/repository/VladilenRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Vladilen.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/VladilenList.vue" afterDir="false" />
+    <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="messages axios v2-v3 get and add">
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/AppAlert.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/configuration/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/configuration/WebSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Views.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Views.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/de/jonashackt/springbootvuejs/configuration/WebSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/de/jonashackt/springbootvuejs/configuration/WebSecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Vladilen.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Vladilen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Vladilen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Vladilen.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,15 +55,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GitClone/sarafan-AddJPA" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/frontend/src/views" />
+      <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/frontend/src/components" />
       <recent name="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain" />
@@ -115,7 +106,7 @@
       <updated>1616076775227</updated>
       <workItem from="1616076779238" duration="1309000" />
       <workItem from="1616080551433" duration="4837000" />
-      <workItem from="1616090797295" duration="22695000" />
+      <workItem from="1616090797295" duration="28740000" />
     </task>
     <task id="LOCAL-00001" summary="v2">
       <created>1616080679546</created>
@@ -145,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616102060916</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="messages axios v2-v3 get and add">
+      <created>1616160689579</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616160689579</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +166,7 @@
     <MESSAGE value="messages axios get" />
     <MESSAGE value="messages axios get update" />
     <MESSAGE value="messages axios v2-v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="messages axios v2-v3" />
+    <MESSAGE value="messages axios v2-v3 get and add" />
+    <option name="LAST_COMMIT_MESSAGE" value="messages axios v2-v3 get and add" />
   </component>
 </project>
