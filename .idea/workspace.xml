@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="messages axios v2-v3 get and add">
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/AppAlert.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Vladilen.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Vladilen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/backend-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/backend-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/Vladilen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Vladilen.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/VladilenList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/VladilenList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GitClone/sarafan-AddJPA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Vue/Vue 3 2021 Владилен Минин/014_2" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -106,7 +106,7 @@
       <updated>1616076775227</updated>
       <workItem from="1616076779238" duration="1309000" />
       <workItem from="1616080551433" duration="4837000" />
-      <workItem from="1616090797295" duration="28740000" />
+      <workItem from="1616090797295" duration="35498000" />
     </task>
     <task id="LOCAL-00001" summary="v2">
       <created>1616080679546</created>
@@ -143,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616160689579</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="messages axios v2-v3 get and add">
+      <created>1616183763228</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616183763228</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
