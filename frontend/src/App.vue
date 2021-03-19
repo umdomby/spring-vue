@@ -2,7 +2,8 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/m">Message</router-link>
+    <router-link to="/m">Message</router-link> |
+    <router-link to="/v">Vladilen</router-link>
   </div>
   <router-view/>
 </template>
@@ -13,7 +14,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000000;
 }
 
 #nav {
@@ -22,7 +23,7 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #FFFFFF;
 }
 
 #nav a.router-link-exact-active {
