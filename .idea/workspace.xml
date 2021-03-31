@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="add post">
+    <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="add CRUD">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend-v2/src/components/Vladilen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-v2/src/components/Vladilen.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend-v2/src/components/VladilenList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-v2/src/components/VladilenList.vue" afterDir="false" />
     </list>
@@ -163,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617226202563</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add CRUD">
+      <created>1617226636036</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617226636036</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +197,7 @@
     <MESSAGE value="messages axios v2-v3 get and add" />
     <MESSAGE value="add get" />
     <MESSAGE value="add post" />
-    <option name="LAST_COMMIT_MESSAGE" value="add post" />
+    <MESSAGE value="add CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CRUD" />
   </component>
 </project>

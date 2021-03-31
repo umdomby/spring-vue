@@ -22,8 +22,6 @@
       <button class=”Search__button” @click="loadPeople()">CALL Spring Boot REST backend service</button>
       <button @click="clear"> Clear </button>
 
-
-
       <vladilen-list
           :people="people"
           @load="loadPeople"
@@ -49,9 +47,13 @@
       components: {
         VladilenList
       },
+      mounted() {
+        this.loadPeople()
+      },
       name: 'message',
       data() {
         return {
+          response: [],
           name: '',
           lastname: '',
           people: [],
@@ -126,10 +128,24 @@
             console.log(e.message)
           }
         },
-        async updatePerson(id) {
+        async updatePerson(id, name, lastname) {
           try {
-            this.name = this.people.find(person => person.id === id).name
-            this.lastname = this.people.find(person => person.id === id).lastname
+
+            const response = await axios.put(`/api/vladilen/${id}`, {
+              name: name,
+              lastname: lastname
+            })
+
+            // this.name = ''
+            // this.lastname = ''
+
+            await this.loadPeople()
+
+            // this.name = name
+            // this.lastname = lastname
+            // this.name = this.people.find(person => person.id === id).name
+            // this.lastname = this.people.find(person => person.id === id).lastname
+
           } catch (e) {
             console.log(e.message)
           }
