@@ -21,7 +21,17 @@
     <div>
       <button class=”Search__button” @click="loadPeople()">CALL Spring Boot REST backend service</button>
       <button @click="clear"> Clear </button>
-      <vladilen-list :people="people" > </vladilen-list>
+
+
+
+      <vladilen-list
+          :people="people"
+          @load="loadPeople"
+          @remove="removePerson"
+          @update="updatePerson"
+          @save="savePerson"
+      > </vladilen-list>
+
     </div>
 
   </div>
@@ -51,6 +61,18 @@
       methods: {
         clear(){
           this.people = ''
+        },
+        async savePerson(id) {
+          const response = await axios.put(`/api/vladilen/${id}`, {
+            name: this.name,
+            lastname: this.lastname
+          })
+
+          this.name = ''
+          this.lastname = ''
+
+          await this.loadPeople()
+
         },
         async loadPeople() {
           try {
@@ -88,6 +110,29 @@
           this.lastname = ''
 
           await this.loadPeople()
+        },
+        async removePerson(id) {
+          try {
+            const name = this.people.find(person => person.id === id).name
+            await axios.delete(`/api/vladilen/${id}`)
+            this.people = this.people.filter(person => person.id !== id)
+
+            this.alert = {
+              type: 'primary',
+              title: 'Успешно!',
+              text: `Пользователь с именем "${name}" был удален`
+            }
+          } catch (e) {
+            console.log(e.message)
+          }
+        },
+        async updatePerson(id) {
+          try {
+            this.name = this.people.find(person => person.id === id).name
+            this.lastname = this.people.find(person => person.id === id).lastname
+          } catch (e) {
+            console.log(e.message)
+          }
         },
       },
     }
