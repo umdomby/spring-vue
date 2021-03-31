@@ -24,23 +24,20 @@ export default {
   name: "VladilenList",
   data() {
     return {
-
       id: '',
       name: '',
       lastname: '',
-
     }
   },
   emits: ['load', 'remove', 'update', 'save'],
   props: ['people'],
-  watch: {
-    people(newVal, oldVal) {
-
-      this.id = newVal.id
-      this.neme = newVal.name
-      this.lastname = newVal.lastname
-    }
-  },
+  // watch: {
+  //   people(newVal, oldVal) {
+  //     this.id = newVal.id
+  //     this.neme = newVal.name
+  //     this.lastname = newVal.lastname
+  //   }
+  // },
 }
 </script>
 
