@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="messages axios v2-v3 get and add">
+      <change afterPath="$PROJECT_DIR$/frontend-v2/src/components/ComVlad.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-v2/src/components/Vladilen.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend-v2/src/components/VladilenList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/backend-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/backend-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Vladilen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Vladilen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/VladilenList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/VladilenList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-v2/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-v2/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-v2/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-v2/src/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="axios-get" />
+        <entry key="$PROJECT_DIR$" value="Vue2-3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,18 +57,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Vue/Vue 3 2021 Владилен Минин/014_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend-v2/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend-v2/src/components" />
+      <recent name="$PROJECT_DIR$/frontend-v2/src" />
+      <recent name="$PROJECT_DIR$/frontend-v2" />
       <recent name="$PROJECT_DIR$/frontend/src/views" />
       <recent name="$PROJECT_DIR$/frontend/src" />
-      <recent name="$PROJECT_DIR$/frontend" />
-      <recent name="$PROJECT_DIR$/frontend/src/components" />
-      <recent name="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="de.jonashackt.springbootvuejs.repository" />

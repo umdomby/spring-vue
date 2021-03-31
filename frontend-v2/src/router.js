@@ -8,6 +8,7 @@ import User from '@/components/User'
 import Login from '@/components/Login'
 import Protected from '@/components/Protected'
 import Message from '@/components/Message'
+import Vladilen from '@/components/Vladilen'
 
 import store from './store'
 
@@ -22,6 +23,7 @@ const router = new Router({
         { path: '/user', component: User },
         { path: '/login', component: Login },
         { path: '/m', component: Message },
+        { path: '/v', component: Vladilen },
         {
             path: '/protected',
             component: Protected,
