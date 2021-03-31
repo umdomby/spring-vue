@@ -1,11 +1,28 @@
 <template>
 
   <div>
-    <button class=”Search__button” @click="loadPeople()">CALL Spring Boot REST backend service</button>
-<!--    <button class=”Search__button” @click="nullRestService()">Null</button>-->
-<!--    <h3>{{ people }}</h3>-->
 
-    <vladilen-list :people="people" > </vladilen-list>
+    <div class="container">
+<!--      <app-alert :alert="alert" @close="alert = null"></app-alert>-->
+
+      <form class="card" @submit.prevent="createPerson">
+        <h2>Работа с базой данных</h2>
+        <div class="form-control">
+          <label for="name">Введите имя</label>
+          <input type="text" id="name" v-model.trim="name">
+          <label for="lastname">Введите фамилию</label>
+          <input type="text" id="lastname" v-model.trim="lastname">
+        </div>
+        <button class="btn primary" :disabled="name.length === 0" >Создать человека</button>
+      </form>
+<!--      <button class="btn primary" :disabled="name.length === 0" @click="createPerson">Создать человека 2</button>-->
+    </div>
+
+    <div>
+      <button class=”Search__button” @click="loadPeople()">CALL Spring Boot REST backend service</button>
+      <button @click="clear"> Clear </button>
+      <vladilen-list :people="people" > </vladilen-list>
+    </div>
 
   </div>
 
@@ -19,15 +36,22 @@
     import axios from 'axios'
 
     export default {
+      components: {
+        VladilenList
+      },
       name: 'message',
       data() {
         return {
-          response: [],
-          errors: [],
+          name: '',
+          lastname: '',
           people: [],
+          alert: null,
         }
       },
       methods: {
+        clear(){
+          this.people = ''
+        },
         async loadPeople() {
           try {
             const {data} = await axios.get('/api/vladilen')
@@ -49,11 +73,23 @@
           }
           console.log(this.people)
         },
-      },
+        async createPerson() {
+          const response = await axios.post('/api/vladilen', {
+            name: this.name,
+            lastname: this.lastname
+          })
+          console.log(response)
+          // this.people.push({
+          //   name: this.name,
+          //   lastname: this.lastname,
+          //
+          // })
+          this.name = ''
+          this.lastname = ''
 
-      components: {
-        VladilenList
-      }
+          await this.loadPeople()
+        },
+      },
     }
 </script>
 
