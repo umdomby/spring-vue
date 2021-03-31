@@ -22,13 +22,13 @@
 <script>
 export default {
   name: "VladilenList",
-  data() {
-    return {
-      id: '',
-      name: '',
-      lastname: '',
-    }
-  },
+  // data() {
+  //   return {
+  //     id: '',
+  //     name: '',
+  //     lastname: '',
+  //   }
+  // },
   emits: ['load', 'remove', 'update', 'save'],
   props: ['people'],
   // watch: {

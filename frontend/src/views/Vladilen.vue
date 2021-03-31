@@ -112,10 +112,24 @@ export default {
         console.log(e.message)
       }
     },
-    async updatePerson(id) {
+    async updatePerson(id, name, lastname) {
       try {
-        this.name = this.people.find(person => person.id === id).name
-        this.lastname = this.people.find(person => person.id === id).lastname
+
+        const response = await axios.put(`/api/vladilen/${id}`, {
+          name: name,
+          lastname: lastname
+        })
+
+        // this.name = ''
+        // this.lastname = ''
+
+        await this.loadPeople()
+
+        // this.name = name
+        // this.lastname = lastname
+        // this.name = this.people.find(person => person.id === id).name
+        // this.lastname = this.people.find(person => person.id === id).lastname
+
       } catch (e) {
         console.log(e.message)
       }
