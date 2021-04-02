@@ -5,17 +5,28 @@
     <div class="container">
 <!--      <app-alert :alert="alert" @close="alert = null"></app-alert>-->
 
-      <form class="card" @submit.prevent="createPerson">
+<!--      <form @submit.prevent="createPerson">-->
         <h2>Работа с базой данных</h2>
         <div class="form-control">
-          <label for="name">Введите имя</label>
+          <label for="name">name</label>
           <input type="text" id="name" v-model.trim="name">
-          <label for="lastname">Введите фамилию</label>
+          <label for="lastname">l</label>
           <input type="text" id="lastname" v-model.trim="lastname">
+          <label for="lastname1">l1</label>
+          <input type="text" id="lastname1" v-model.trim="lastname1">
+          <label for="lastname2">l2</label>
+          <input type="text" id="lastname2" v-model.trim="lastname2">
+          <label for="lastname3">l3</label>
+          <input type="text" id="lastname3" v-model.trim="lastname3">
+          <label for="lastname4">l4</label>
+          <input type="text" id="lastname4" v-model.trim="lastname4">
+
         </div>
-        <button class="btn primary" :disabled="name.length === 0" >Создать человека</button>
-      </form>
-<!--      <button class="btn primary" :disabled="name.length === 0" @click="createPerson">Создать человека 2</button>-->
+        <br>
+        <br>
+<!--        <button class="btn primary" :disabled="name.length === 0" >Создать человека</button>-->
+<!--      </form>-->
+      <button class="btn primary" :disabled="name.length === 0" @click="createPerson">Создать человека 2</button>
     </div>
 
     <div>
@@ -56,6 +67,10 @@
           response: [],
           name: '',
           lastname: '',
+          lastname1: '',
+          lastname2: '',
+          lastname3: '',
+          lastname4: '',
           people: [],
           alert: null,
         }
@@ -64,18 +79,18 @@
         clear(){
           this.people = ''
         },
-        async savePerson(id) {
-          const response = await axios.put(`/api/vladilen/${id}`, {
-            name: this.name,
-            lastname: this.lastname
-          })
-
-          this.name = ''
-          this.lastname = ''
-
-          await this.loadPeople()
-
-        },
+        // async savePerson(id) {
+        //   const response = await axios.put(`/api/vladilen/${id}`, {
+        //     name: this.name,
+        //     lastname: this.lastname
+        //   })
+        //
+        //   this.name = ''
+        //   this.lastname = ''
+        //
+        //   await this.loadPeople()
+        //
+        // },
         async loadPeople() {
           try {
             const {data} = await axios.get('/api/vladilen')
@@ -100,7 +115,11 @@
         async createPerson() {
           const response = await axios.post('/api/vladilen', {
             name: this.name,
-            lastname: this.lastname
+            lastname: this.lastname,
+            lastname1: this.lastname1,
+            lastname2: this.lastname2,
+            lastname3: this.lastname3,
+            lastname4: this.lastname4,
           })
           console.log(response)
           // this.people.push({
@@ -110,6 +129,10 @@
           // })
           this.name = ''
           this.lastname = ''
+          this.lastname1 = ''
+          this.lastname2 = ''
+          this.lastname3 = ''
+          this.lastname4 = ''
 
           await this.loadPeople()
         },
@@ -128,12 +151,16 @@
             console.log(e.message)
           }
         },
-        async updatePerson(id, name, lastname) {
+        async updatePerson(id, name, lastname, lastname1, lastname2, lastname3, lastname4) {
           try {
 
             const response = await axios.put(`/api/vladilen/${id}`, {
               name: name,
-              lastname: lastname
+              lastname: lastname,
+              lastname1: lastname1,
+              lastname2: lastname2,
+              lastname3: lastname3,
+              lastname4: lastname4
             })
 
             // this.name = ''

@@ -18,5 +18,13 @@ public class Vladilen {
     private String name;
     @JsonView(Views.IdName.class)
     private String lastname;
+    @JsonView(Views.IdName.class)
+    private String lastname1;
+    @JsonView(Views.IdName.class)
+    private String lastname2;
+    @JsonView(Views.IdName.class)
+    private String lastname3;
+    @JsonView(Views.IdName.class)
+    private String lastname4;
 
 }
