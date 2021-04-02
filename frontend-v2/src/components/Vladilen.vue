@@ -79,18 +79,6 @@
         clear(){
           this.people = ''
         },
-        // async savePerson(id) {
-        //   const response = await axios.put(`/api/vladilen/${id}`, {
-        //     name: this.name,
-        //     lastname: this.lastname
-        //   })
-        //
-        //   this.name = ''
-        //   this.lastname = ''
-        //
-        //   await this.loadPeople()
-        //
-        // },
         async loadPeople() {
           try {
             const {data} = await axios.get('/api/vladilen')
@@ -176,6 +164,18 @@
           } catch (e) {
             console.log(e.message)
           }
+        },
+
+
+
+        async savePerson(id) {
+          const response = await axios.put(`/api/vladilen/${id}`, {
+            name: this.name,
+            lastname: this.lastname
+          })
+          this.name = ''
+          this.lastname = ''
+          await this.loadPeople()
         },
       },
     }

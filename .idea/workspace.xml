@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="add CRUD line update //watch:">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Vladilen.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/de/jonashackt/springbootvuejs/domain/Vladilen.java" afterDir="false" />
+    <list default="true" id="7ca0dd1b-f6a3-4e1b-a68f-0148cac51d20" name="Default Changelist" comment="add +4 field lastname">
       <change beforePath="$PROJECT_DIR$/frontend-v2/src/components/Vladilen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-v2/src/components/Vladilen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-v2/src/components/VladilenList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-v2/src/components/VladilenList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617231416769</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add +4 field lastname">
+      <created>1617323690503</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617323690503</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +218,7 @@
     <MESSAGE value="add CRUD" />
     <MESSAGE value="add CRUD line" />
     <MESSAGE value="add CRUD line update //watch:" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CRUD line update //watch:" />
+    <MESSAGE value="add +4 field lastname" />
+    <option name="LAST_COMMIT_MESSAGE" value="add +4 field lastname" />
   </component>
 </project>
