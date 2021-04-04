@@ -26,7 +26,7 @@
         <br>
 <!--        <button class="btn primary" :disabled="name.length === 0" >Создать человека</button>-->
 <!--      </form>-->
-      <button class="btn primary" :disabled="name.length === 0" @click="createPerson">Создать человека 2</button>
+      <button class="btn primary" :disabled="name.length === 0" @click="createPerson">Создать человека</button>
     </div>
 
     <div>
@@ -38,6 +38,7 @@
           @load="loadPeople"
           @remove="removePerson"
           @update="updatePerson"
+          @patchupdate="patchUpdatePerson"
           @save="savePerson"
       > </vladilen-list>
 
@@ -148,6 +149,33 @@
               lastname1: lastname1,
               lastname2: lastname2,
               lastname3: lastname3,
+              lastname4: lastname4
+            })
+
+            // this.name = ''
+            // this.lastname = ''
+
+            await this.loadPeople()
+
+            // this.name = name
+            // this.lastname = lastname
+            // this.name = this.people.find(person => person.id === id).name
+            // this.lastname = this.people.find(person => person.id === id).lastname
+
+          } catch (e) {
+            console.log(e.message)
+          }
+        },
+
+        async patchUpdatePerson(id, lastname4) {
+          try {
+
+            const response = await axios.patch(`/api/vladilen/${id}`, {
+              // name: name,
+              // lastname: lastname,
+              // lastname1: lastname1,
+              // lastname2: lastname2,
+              // lastname3: lastname3,
               lastname4: lastname4
             })
 

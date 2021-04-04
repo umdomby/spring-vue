@@ -12,7 +12,8 @@
           <input type="text" v-model="person.lastname4">
         </h3>
         <button class="btn danger" @click="$emit('remove', person.id)">Удалить</button>
-        <button class="btn danger" @click="$emit('update', person.id, person.name, person.lastname, person.lastname1, person.lastname2, person.lastname3, person.lastname4)">Сохранить</button>
+        <button class="btn danger" @click="$emit('update', person.id, person.name, person.lastname, person.lastname1, person.lastname2, person.lastname3, person.lastname4)">Сохранить всё</button>
+        <button class="btn danger" @click="$emit('patchupdate', person.id, person.lastname4)">Сохранить lastname4</button>
 <!--        <button class="btn" @click="$emit('update', person.id)">Редактировать</button>-->
 <!--        <button class="btn" @click="$emit('save', person.id)">Сохранить</button>-->
       </div>
@@ -34,7 +35,7 @@ export default {
   //     lastname: '',
   //   }
   // },
-  emits: ['load', 'remove', 'update', 'save'],
+  emits: ['load', 'remove', 'update', 'patchupdate', 'save'],
   props: ['people'],
   // watch: {
   //   people(newVal, oldVal) {
